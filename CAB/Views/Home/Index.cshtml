@@ -1,0 +1,112 @@
+﻿@model CAB.Models.Cab_model
+@{
+    ViewData["Title"] = "";  //Seting the page title name by inserting in Viewdata
+}
+
+
+<script>
+    function lettersAndNoOnly(input) {
+        var regex = /[^a-zA-Z0-9]/g;
+        input.value = input.value.replace(regex, "");
+    }
+
+    function lettersOnly(input) {
+        var regex = /[^a-z]/gi;
+        input.value = input.value.replace(regex, "");
+    }
+
+
+</script>
+<style>
+    .p {
+        text-align: center;
+    }
+
+    #txtSearch {
+        width: 200px;
+        margin: 20px;
+    }
+</style>
+
+@*Status of Appl*@
+
+
+<div class="masthead backcolor">
+    <h3 class="text-white text-center p-2">
+        Status of Complaint
+    </h3>
+</div>
+
+<div class="row d-flex">
+    <div class="col-sm-3">
+
+    </div>
+    <div class="col-sm-4 cen effect5">
+        <form asp-controller="Home" class="loginbck " id="myform" asp-action="SearchRecord" style="padding:10px;">
+
+            <div class="form-group row">
+
+                <label for="inputEmail3" class="col-sm-5 col-form-label" style="color:black;font-size:22px">Army No</label>
+
+                <div class="col-sm-6">
+                    <input type="text" required id="ArmyNo" name="ArmyNo" maxlength="25" placeholder="" onkeyup="lettersAndNoOnly(this)" />
+                </div>
+
+            </div>
+
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-1 col-form-label"></label>
+                <div class="col-sm-11">
+                    Enter Army No e.g 11111, 123456, 15356789 <br /><br />
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-5 col-form-label" style="color:black;font-size:22px">
+                    Date of Complaint
+                </label>
+                <div class="col-sm-6">
+                    <input type="date" required id="Date" name="Date" placeholder="as per appl">
+                </div>
+            </div>
+
+            @*            <div class="form-group row">
+                  <div class="col-sm-3">
+                      <br />
+                      <br />
+                </div>*@
+
+            <div style="display:flex;justify-content:space-between">
+                <input type="submit" value="Search" class="btn btn-primary" id="txtSearch">
+                <input type="submit" value="Reset" class="btn btn-primary" id="txtSearch" onclick="resetValue()">
+
+            </div>
+
+        </form>
+        @*                <div class="col-sm-3">
+
+
+            </div>*@
+
+    </div>
+    <div class="col-sm-4">
+    </div>
+
+
+</div>
+
+
+<script>
+
+    function resetValue() {
+
+        document.getElementById('myform').reset();
+
+
+    }
+
+</script>
+
+
+

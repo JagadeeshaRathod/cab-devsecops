@@ -1,0 +1,164 @@
+.navbar-nav > li {
+    padding-left: 30px ;
+    padding-right: 30px ;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.navbar-nav > li > a {
+    color: white !important;
+}
+
+.nav-item{
+    border:5px solid white;
+}
+
+.card{
+    margin-left: 17px;
+    margin-right: 20px;
+    margin-top: -27px;
+    border-style: outset;
+    border: solid 1px #7c0104;;
+    background-color: #e9eff5;
+}
+
+.card-body{
+    color: #7c0104;
+}
+
+.linkcss{
+    padding-bottom: 133px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 48px;
+}
+
+.listcss{
+    border-radius: 10px;
+    background-color: #7c0104; 
+    border: solid white;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+}
+
+ .a  ::after{
+    color: white;
+}
+
+
+.tabs {
+    position: relative;
+    display: flex;
+    min-height: 300px;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+}
+
+.tabby-tab {
+    flex: 1;
+}
+
+    .tabby-tab label {
+        display: block;
+        box-sizing: border-box;
+        /* tab content must clear this */
+        height: 40px;
+        padding: 10px;
+        text-align: center;
+        background: /*#9768D1;*/ #7c0104;
+        cursor: pointer;
+        transition: background 0.5s ease;
+        color: white;
+    }
+
+        .tabby-tab label:hover {
+            background: #7B52AB;
+        }
+
+.tabby-content {
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    right: 0;
+    /* clear the tab labels */
+    top: 40px;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+    background: #f8f1f1 /*#553285*/;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    /* show/hide */
+    opacity: 0;
+    transform: scale(0.1);
+    transform-origin: top left;
+    color: #7c0104;
+}
+
+    .tabby-content img {
+        float: left;
+        margin-right: 20px;
+        border-radius: 8px;
+    }
+
+
+/* MAKE IT WORK ----- */
+
+.tabby-tab [type=radio] {
+    display: none;
+}
+
+[type=radio]:checked ~ label {
+    background: #f8f1f1 /*#464448*/ /*#553285*/;
+    z-index: 2;
+    color: #7c0104;
+}
+
+    [type=radio]:checked ~ label ~ .tabby-content {
+        z-index: 1;
+        /* show/hide */
+        opacity: 1;
+        transform: scale(1);
+    }
+
+/* BREAKPOINTS ----- */
+@media screen and (max-width: 767px) {
+    .tabs {
+        min-height: 400px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tabs {
+        min-height: 580px;
+    }
+
+    .tabby-tab label {
+        height: 60px;
+    }
+
+    .tabby-content {
+        top: 60px;
+    }
+
+        .tabby-content img {
+            float: none;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+}
+
+.zoom {
+    /*padding: 50px;*/
+    /*background-color: green;*/
+    transition: transform .2s;
+    width: 200px;
+    /*height: 200px;*/
+    margin: 0 auto;
+}
+
+    .zoom:hover {
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.5);
+    }

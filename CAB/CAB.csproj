@@ -1,0 +1,73 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\assets\js\wow.min.js animated.headline.js jquery.magnific-popup.js jquery.scrollUp.min.js jquery.nice-select.min.js jquery.sticky.js contact.js.pagespeed.jc.vCFVuLCRzb.js" />
+    <Content Remove="wwwroot\Image\CABMAS.xlsx" />
+    <Content Remove="wwwroot\Image\MainCab_for_Ajay.xlsx" />
+    <Content Remove="wwwroot\Image\NewCab.xlsx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\assets\css\all.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\ImportData\uploadFile.cshtml" />
+    <None Include="Views\ProcessData\ProcessDataCnf.cshtml" />
+    <None Include="wwwroot\assets\fonts\fa-brands-400.svg" />
+    <None Include="wwwroot\assets\fonts\fa-brands-400.woff2" />
+    <None Include="wwwroot\assets\fonts\fa-regular-400.svg" />
+    <None Include="wwwroot\assets\fonts\fa-regular-400.woff2" />
+    <None Include="wwwroot\assets\fonts\fa-solid-900.svg" />
+    <None Include="wwwroot\assets\fonts\fa-solid-900.woff2" />
+    <None Include="wwwroot\assets\fonts\Flaticon.svg" />
+    <None Include="wwwroot\assets\fonts\Flaticon.woff2" />
+    <None Include="wwwroot\assets\fonts\themify.svg" />
+    <None Include="wwwroot\assets\img\icon\feature_icon_1.svg" />
+    <None Include="wwwroot\assets\img\icon\feature_icon_2.svg" />
+    <None Include="wwwroot\assets\img\icon\feature_icon_3.svg" />
+    <None Include="wwwroot\assets\img\icon\feature_icon_4.svg" />
+    <None Include="wwwroot\assets\js\jquery.form.js jquery.validate.min.js mail-script.js jquery.ajaxchimp.min.js plugins.js main.js.pagespeed.jc.xZbP5yJmEu.js" />
+    <None Include="wwwroot\assets\js\jquery.magnific-popup.js jquery.scrollUp.min.js jquery.nice-select.min.js jquery.sticky.js contact.js jquery.form.js.pagespeed.jc.lAaetcuKu4.js" />
+    <None Include="wwwroot\assets\js\jquery.scrollUp.min.js jquery.nice-select.min.js jquery.sticky.js jquery.magnific-popup.js contact.js jquery.form.js.pagespeed.jc.VKQkdPtnQp.js" />
+    <None Include="wwwroot\assets\js\jquery.validate.min.js mail-script.js jquery.ajaxchimp.min.js plugins.js main.js.pagespeed.jc.X9c6Ii-Aij.js" />
+    <None Include="wwwroot\assets\js\mixitup.min.js jquery.counterup.min.js.pagespeed.jc.Dx_j75DylE.js" />
+    <None Include="wwwroot\assets\js\owl.carousel.min.js slick.min.js wow.min.js animated.headline.js.pagespeed.jc.wJ9RpF0nwF.js" />
+    <None Include="wwwroot\assets\js\owl.carousel.min.js slick.min.js.pagespeed.jc.uX-1LJ-POP.js" />
+    <None Include="wwwroot\assets\js\popper.min.js bootstrap.min.js jquery.slicknav.min.js.pagespeed.jc.tZyD-FwHec.js" />
+    <None Include="wwwroot\assets\js\swiper.min.js" />
+    <None Include="wwwroot\assets\js\vendor\jquery-1.12.4.min.js" />
+    <None Include="wwwroot\assets\js\vendor\modernizr-3.5.0.min.js" />
+    <None Include="wwwroot\assets\js\waypoints.min.js" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="EFCore.BulkExtensions" Version="6.5.6" />
+		<PackageReference Include="ExcelDataReader" Version="3.6.0" />
+		<PackageReference Include="ExcelDataReader.DataSet" Version="3.6.0" />
+		<PackageReference Include="itext7" Version="7.2.3" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.8" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.8">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.8" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.8">
+		
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.8" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="wwwroot\lib\" />
+	</ItemGroup>
+
+</Project>

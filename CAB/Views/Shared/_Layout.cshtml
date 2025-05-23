@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]CAB</title>
+
+    @* <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CAB.styles.css" asp-append-version="true" />*@
+   @* <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>*@
+
+    <link href="~/lib/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="~/assets/img/favicon.ico">
+    <script src="~/lib/jquery.min.js"></script>
+    <link href="~/content/style.css" rel="stylesheet" />
+
+    @*
+
+    <link rel="stylesheet" href="~/assets/css/A.style.css.pagespeed.cf.LmhYJqu-1k.css">*@
+    <style>
+        p {
+            float: right;
+        }
+
+        span {
+            margin-right: 15px; /* Adjust the value to set the desired space between spans */
+        }
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%
+        }
+
+        .backcolor {
+            background-color: #7c0104;
+            color: white;
+        }
+
+        .headermodify {
+            background-color: #7c0104;
+            padding: 5px;
+            height: 80px;
+        }
+
+        .imgforheader {
+            height: 60px;
+            width: 80px;
+            border: solid;
+            border-color: white;
+        }
+
+        .fs {
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Full-width input fields */
+        input[type=text], input[type=date] {
+            width: 130%;
+            padding: 12px 20px;
+            margin: 0px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+
+
+        .loginbck {
+            background-color: #fff;
+            /*  padding:20px;*/
+        }
+
+        .cen {
+            width: 30%;
+            height: 30%;
+            background: #fff;
+            margin: 40px auto;
+            margin-left: 121px;
+            border-style: groove;
+        }
+        /*==================================================
+                 * Effect 5
+                 * ===============================================*/
+        .effect5 {
+            position: relative;
+        }
+
+            .effect5:before,
+            .effect5:after {
+                z-index: -1;
+                position: absolute;
+                content: "";
+                bottom: 25px;
+                left: 10px;
+                width: 50%;
+                top: 80%;
+                max-width: 300px;
+                background: #777;
+                -webkit-box-shadow: 0 35px 20px #777;
+                -moz-box-shadow: 0 35px 20px #777;
+                box-shadow: 0 35px 20px #777;
+                -webkit-transform: rotate(-8deg);
+                -moz-transform: rotate(-8deg);
+                -o-transform: rotate(-8deg);
+                -ms-transform: rotate(-8deg);
+                transform: rotate(-8deg);
+            }
+
+            .effect5:after {
+                -webkit-transform: rotate(8deg);
+                -moz-transform: rotate(8deg);
+                -o-transform: rotate(8deg);
+                -ms-transform: rotate(8deg);
+                transform: rotate(8deg);
+                right: 10px;
+                left: auto;
+            }
+
+        .borderdiv {
+            border-style: groove;
+        }
+
+        .masthead img {
+            width: 100%;
+            height: 156px;
+        }
+
+        .dropdown-menu {
+            border: 2px solid green;
+            line: height 50px;
+            float: left;
+            text-align: center;
+            list-style: none;
+        }
+
+        li:hover {
+            background-color: cornflowerblue;
+        }
+
+        .m-50 {
+            margin: 5rem !important;
+            margin-top: 0px !important;
+        }
+
+        .footerfixed {
+            position: fixed;
+            bottom: 0px;
+            right: 80px;
+            left: 80px;
+        }
+    </style>
+
+</head>
+
+<body class="m-50">
+    <div class="container mt-2">
+        <div class="masthead">
+            <img src="~/image/img101.jpg" style="width:100%" />
+        </div>
+
+        <header>
+
+            <div class="header-area">
+                <div class="main-header">
+
+                    <nav class="navbar navbar-expand-md navbar-dark mt-2 backcolor ">
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+
+                                <li class="nav-item dropdown border border-white rounded mouseover" style="padding-left: 55px; padding-right: 55px; margin-right: 20px">
+                                    <a class="nav-link" href="../Home" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Home
+                                    </a>
+
+                                </li>
+
+                                <li class="nav-item dropdown border border-white rounded mouseover" style="padding-left: 55px; padding-right: 55px; margin-right: 20px">
+                                    <a class="nav-link" href="https://portal.army.mil" target="_blank" id="navbarDropdown" role="button" aria-expanded="false">
+                                        Army Portal
+                                    </a>
+
+                                </li>
+
+                                <li class="nav-item dropdown border border-white rounded mouseover" style="padding-left: 55px; padding-right: 55px; margin-right: 20px">
+                                    <a class="nav-link" href="../Home/Polices" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Policies
+                                    </a>
+
+                                </li>
+
+                                <li class="nav-item dropdown border border-white rounded mouseover" style="padding-left: 55px; padding-right: 55px; margin-right: 20px">
+                                    <a class="nav-link" href="../Home/ContactUs" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Contact Us
+                                    </a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div style="background-color: yellow; margin-top: -0px; fixed-bottomss">
+                        <div class="p-0">
+                            <marquee style="font-weight:bold;color: red;" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();">*** Contact Administrator for further assistance (Tele No : 33135, 23014705) *** </marquee>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </header>
+
+        <div class="">
+
+            @RenderBody()
+
+        </div>
+
+        <footer class="bg-light text-center text-lg-start footerfixed container mt-2">
+
+            <!-- Copyright -->
+            <div class="text-center p-3 backcolor">
+
+                Copyright &copy;2022 Developed By ASDC, DGIS  : Sponsor Dte : COAS Sectt (CAB) ,
+                Vetted By ACG as on 30 Nov 2022
+                <p>
+                    <span id="dailyCounter">
+                    </span>
+                    <span id="monthlyCounter">
+                      </span>
+                    <span id="hitCounter"></span>
+                </p>
+               
+               
+                
+                
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+        @await RenderSectionAsync("Scripts", required: false)
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            
+            // Fetch Monthly Counter
+            $.get('/Home/GetHitCounterMonthly', function (data) {
+
+                $('#monthlyCounter').text(' '+ data.submitIp);
+            });
+
+            // Fetch Daily Counter
+            $.get('/Home/GetHitCounterToday', function (data) {
+                
+                $('#dailyCounter').text('Visitors TODAY :  '+data.submitBy);
+            });
+
+            // Fetch Total Counter
+            $.get('/Home/GetHitCounter', function (data) {
+               
+                $('#hitCounter').text('TOTAL :  ' + data.sanctionIP);
+            });
+
+            
+        });
+    </script>
+</body>
+</html>

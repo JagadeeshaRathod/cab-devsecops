@@ -1,0 +1,172 @@
+
+-----------------------------------------------------------------------------
+Date : 18-10-2022 16:38:07
+An exception was thrown while attempting to evaluate a LINQ query parameter expression. See the inner exception for more information. To show additional information call 'DbContextOptionsBuilder.EnableSensitiveDataLogging'.
+
+-----------------------------------------------------------------------------
+Date : 18-10-2022 16:38:28
+An exception was thrown while attempting to evaluate a LINQ query parameter expression. See the inner exception for more information. To show additional information call 'DbContextOptionsBuilder.EnableSensitiveDataLogging'.
+
+-----------------------------------------------------------------------------
+Date : 18-10-2022 16:39:00
+An exception was thrown while attempting to evaluate a LINQ query parameter expression. See the inner exception for more information. To show additional information call 'DbContextOptionsBuilder.EnableSensitiveDataLogging'.
+
+-----------------------------------------------------------------------------
+Date : 19-10-2022 11:34:14
+An exception was thrown while attempting to evaluate a LINQ query parameter expression. See the inner exception for more information. To show additional information call 'DbContextOptionsBuilder.EnableSensitiveDataLogging'.
+
+-----------------------------------------------------------------------------
+Date : 19-10-2022 11:35:42
+An exception was thrown while attempting to evaluate a LINQ query parameter expression. See the inner exception for more information. To show additional information call 'DbContextOptionsBuilder.EnableSensitiveDataLogging'.
+
+-----------------------------------------------------------------------------
+Date : 26-10-2022 10:26:10
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SNI_PN11, error: 26 - Error Locating Server/Instance Specified)
+
+-----------------------------------------------------------------------------
+Date : 26-10-2022 10:36:47
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SNI_PN11, error: 26 - Error Locating Server/Instance Specified)
+
+-----------------------------------------------------------------------------
+Date : 27-10-2022 10:22:17
+Unauthorised Access detected :  ::1   27-10-2022 10:22:17
+
+-----------------------------------------------------------------------------
+Date : 27-10-2022 10:22:48
+Unauthorised Access detected :  ::1   27-10-2022 10:22:48
+
+-----------------------------------------------------------------------------
+Date : 27-10-2022 12:18:25
+Unauthorised Access detected :  ::1   27-10-2022 12:18:25
+
+-----------------------------------------------------------------------------
+Date : 27-10-2022 12:21:57
+Unauthorised Access detected :  ::1   27-10-2022 12:21:57
+
+-----------------------------------------------------------------------------
+Date : 27-10-2022 12:23:58
+Unauthorised Access detected :  ::1   27-10-2022 12:23:58
+
+-----------------------------------------------------------------------------
+Date : 27-10-2022 12:33:51
+Unauthorised Access detected :  ::1   27-10-2022 12:33:51
+
+-----------------------------------------------------------------------------
+Date : 27-10-2022 14:09:03
+Unauthorised Access detected :  ::1   27-10-2022 14:09:03
+
+-----------------------------------------------------------------------------
+Date : 27-10-2022 14:13:27
+Unauthorise Access from : ::127-10-2022 00:00:00
+
+-----------------------------------------------------------------------------
+Date : 27-10-2022 14:14:36
+Unauthorise Access from : ::127-10-2022 00:00:00
+
+-----------------------------------------------------------------------------
+Date : 27-10-2022 14:16:36
+Unauthorise Access from : ::127-10-2022 00:00:00
+
+-----------------------------------------------------------------------------
+Date : 27-10-2022 14:32:51
+Unauthorised Access detected :  ::1   27-10-2022 14:32:51
+
+-----------------------------------------------------------------------------
+Date : 27-10-2022 14:35:22
+Invalid file signature.
+
+-----------------------------------------------------------------------------
+Date : 27-10-2022 14:38:01
+Invlid File!
+
+-----------------------------------------------------------------------------
+Date : 27-10-2022 14:38:27
+Invlid File!
+
+-----------------------------------------------------------------------------
+Date : 27-10-2022 14:44:49
+Invlid File!
+
+-----------------------------------------------------------------------------
+Date : 27-10-2022 14:45:33
+Invlid File!
+
+-----------------------------------------------------------------------------
+Date : 27-10-2022 14:47:10
+Invlid File!
+
+-----------------------------------------------------------------------------
+Date : 27-10-2022 14:48:39
+Invlid File!
+
+-----------------------------------------------------------------------------
+Date : 31-08-2044 09:55:28
+Invalid column name 'Status'.
+
+-----------------------------------------------------------------------------
+Date : 31-08-2044 09:56:11
+Invalid column name 'Status'.
+
+-----------------------------------------------------------------------------
+Date : 19-12-2022 16:25:45
+An exception was thrown while attempting to evaluate a LINQ query parameter expression. See the inner exception for more information. To show additional information call 'DbContextOptionsBuilder.EnableSensitiveDataLogging'.
+
+-----------------------------------------------------------------------------
+Date : 19-12-2022 16:36:43
+An exception was thrown while attempting to evaluate a LINQ query parameter expression. See the inner exception for more information. To show additional information call 'DbContextOptionsBuilder.EnableSensitiveDataLogging'.
+
+-----------------------------------------------------------------------------
+Date : 22-12-2022 10:56:18
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SNI_PN11, error: 26 - Error Locating Server/Instance Specified)
+
+-----------------------------------------------------------------------------
+Date : 16-01-2024 16:08:19
+An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+
+-----------------------------------------------------------------------------
+Date : 16-01-2024 16:08:35
+Login failed for user 'mpuser'.
+
+-----------------------------------------------------------------------------
+Date : 16-01-2024 16:09:53
+An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+
+-----------------------------------------------------------------------------
+Date : 16-01-2024 16:12:37
+Login failed for user 'mpuser'.
+
+-----------------------------------------------------------------------------
+Date : 16-01-2024 16:13:47
+An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+
+-----------------------------------------------------------------------------
+Date : 16-01-2024 16:54:59
+An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+
+-----------------------------------------------------------------------------
+Date : 16-01-2024 16:55:19
+Login failed for user 'mpuser'.
+
+-----------------------------------------------------------------------------
+Date : 23-10-2024 10:54:17
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SNI_PN11, error: 26 - Error Locating Server/Instance Specified)
+
+-----------------------------------------------------------------------------
+Date : 23-10-2024 11:08:23
+Unauthorised Access detected :  127.0.0.1   23-10-2024 11:08:23
+
+-----------------------------------------------------------------------------
+Date : 23-10-2024 11:09:47
+Unauthorise Access from : 127.0.0.123-10-2024 00:00:00
+
+-----------------------------------------------------------------------------
+Date : 23-10-2024 11:09:56
+Unauthorise Access from : 127.0.0.123-10-2024 00:00:00
+
+-----------------------------------------------------------------------------
+Date : 23-10-2024 11:11:10
+Unauthorised Access detected :  127.0.0.1   23-10-2024 11:11:10
+
+-----------------------------------------------------------------------------
+Date : 23-10-2024 11:22:09
+Unauthorised Access detected :  127.0.0.1   23-10-2024 11:22:09

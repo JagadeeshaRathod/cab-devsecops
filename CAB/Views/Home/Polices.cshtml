@@ -1,0 +1,53 @@
+﻿<div class="masthead backcolor">
+    <h3 class="text-white text-center p-2">
+        Policies
+    </h3>
+</div>
+<div class="row d-flex">
+    <div class="col-sm-4">
+    </div>
+    <div class="col-sm-4 cen">
+        @*<a href="~/pdf/sample.pdf" target="_blank">Download Policies</a>
+*@
+        @{
+         
+            foreach (var filename in ViewBag.Courses)
+            {
+                    //<a href="" onclick="return  functionConfirm1('@Courses')">@Courses</a>
+
+                <a asp-controller="Home"
+           asp-action="WaterMark2" asp-route-id="@filename">@filename</a>
+
+                            <br />
+            }
+        }
+    </div>
+    <div class="col-sm-4">
+    </div>
+</div>
+@*<script>
+    function functionConfirm1(Courses) {
+        //alert(Courses);
+
+                $.ajax({
+                    //debugger;
+                    url: '/Home/WaterMark',
+                    type: 'POST',
+                     data: { "Courses": Courses }, //get the search string
+                    success: function (response) {
+                        //debugger;
+                        console.log(response);
+                        if (response) {  // check if data is defined
+                            if (response != null) {
+                        //alert(response);
+                        window.open('../Download/' + response + '.pdf', '_blank');
+                            }
+                        }
+                    }
+                });
+        return false;
+    }
+
+</script>*@
+
+

@@ -1,0 +1,74 @@
+﻿@model IEnumerable<CAB.Models.CabData>
+
+
+@{
+    ViewData["Title"] = "Index";   //Seting the page title name by inserting in Viewdata
+}
+
+<p>
+    <a asp-action="Search">Search New</a>
+</p>
+<div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-6">
+        <table class="table">
+            <thead>
+                <tr style="background-color:#dfdfdf">
+
+                    <th>Army No</th>
+                    <th>RK</th>
+                    <th>Name</th>
+                    <th>Complaint Type</th>
+                    <th>Subj</th>
+                    <th>Complaint date</th>
+                    <th>Appl Recd date (CAB)</th>
+                    <th>Regt</th>
+                    <th>Current status</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ArmyNo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Complaint_Type)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Rank)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Subject)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Dt_Of_Complaint)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Recd_Date_Cab)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Regt)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Case_Status)
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-4">
+    </div>
+</div>
+
+
+
+

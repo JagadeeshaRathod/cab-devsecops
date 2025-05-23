@@ -1,0 +1,117 @@
+﻿@model IEnumerable<CAB.Models.CabData>
+
+@{
+    ViewData["Title"] = "Index";    //Seting the page title name by inserting in Viewdata
+}
+
+<div class="masthead backcolor">
+    <h3 class="text-white text-center p-2">
+        Status of Complaint
+
+    </h3>
+</div>
+@*<p>
+    <a asp-action="Search">Search New</a>
+</p>*@
+<div class="row align-items-center ">
+<div class="col-md-4">
+</div>
+    <div class="col-md-4">
+
+        <table class="table table-bordered">
+@*    <thead>
+        <tr style="background-color:#dfdfdf">
+            <th>Army No</th>
+            <th>RK</th>
+            <th>Name</th>
+          
+            <th>Complaint date</th>
+            <th>Regt</th>
+            <th>Info Date)</th>
+            
+            <th>Current status</th>
+        </tr>
+    </thead>*@
+    <tbody>
+                @{
+                    var i = 0;
+                   
+                }
+        @foreach (var item in Model)
+        {
+                    i++;
+                    String ss = item.Dt_Of_Complaint.ToShortDateString();
+                    String ss1 = item.InfoDate.ToShortDateString();
+                    <tr class="table-primary">
+                <td>
+                    Army No
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ArmyNo)
+                </td>
+                </tr>
+                    <tr class="table-active">
+                <td>
+                    Rank
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rank)
+                </td>
+            </tr>
+                    <tr class="table-primary">
+                <td>
+                    Name
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+            </tr>
+                    <tr class="table-active">
+                <td>
+                   Dt of Complaint
+                </td>
+                <td>
+                           @ss.Replace("-","/")
+                </td>
+            </tr>
+                    <tr class="table-primary">
+                <td>
+                    Regt
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Regt)
+                </td>
+                 </tr>
+                    <tr class="table-active">
+                  <td>
+                   Status Intimated Date
+                </td>
+                <td>
+                            @ss1.Replace("-","/")
+                </td>
+            </tr>
+                    <tr class="table-primary">
+                   <td class="text-danger">
+                    Current Status
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Case_Status)
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+        @if(i==0)
+        {
+            <h1 class="text-danger mx-auto text-center">No Record Found</h1>
+
+           
+        }
+        
+</div>
+
+<div class="col-md-4">
+</div>
+    <a href="/Home" class="btn btn-success mx-auto text-center m-2 p-2 text-center" style="width:100px">Back</a>
+</div>
