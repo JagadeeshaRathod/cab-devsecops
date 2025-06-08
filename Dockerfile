@@ -23,10 +23,13 @@ FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS runtime
 
 WORKDIR /app
 
+# Set environment variable so ASP.NET Core listens on port 7097
+ENV ASPNETCORE_URLS=http://*:7097
+
 # Copy the published output from the build stage
 COPY --from=build /app/publish .
 
-# Expose ports your app listens on
+# Expose port 7097
 EXPOSE 7097
 
 # Use entrypoint to run the app
