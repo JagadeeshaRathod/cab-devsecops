@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cab-devsecops-app
+  namespace: cab-devsecop-app
+  labels:
+    app: cab-devsecops-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cab-devsecops-app
+  template:
+    metadata:
+      labels:
+        app: cab-devsecops-app
+    spec:
+      containers:
+        - name: cab-devsecops-app
+          image: jagadeesharathod/cab-devsecops-app:latest
+          ports:
+            - containerPort: 80
+      imagePullSecrets:
+        - name: dockerhub-secret
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cab-devsecops-service
+  namespace: cab-devsecop-app
+spec:
+  selector:
+    app: cab-devsecops-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: NodePort
