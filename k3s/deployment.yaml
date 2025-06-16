@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cab-devsecops-app
+  name: cab-devsecop-app
   namespace: cab-devsecop-app
   labels:
-    app: cab-devsecops-app
+    app: cab-devsecop-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: cab-devsecops-app
+      app: cab-devsecop-app
   template:
     metadata:
       labels:
-        app: cab-devsecops-app
+        app: cab-devsecop-app
     spec:
       containers:
-        - name: cab-devsecops-app
+        - name: cab-devsecop-app
           image: jagadeesharathod/cab-devsecops-app:latest
           ports:
             - containerPort: 80
@@ -26,7 +26,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: cab-devsecops-service
+  name: cab-devsecop-service
   namespace: cab-devsecop-app
 spec:
   selector:
