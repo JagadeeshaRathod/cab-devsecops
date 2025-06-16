@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cab-devsecop-app
-  namespace: cab-devsecop-app
+  name: cab-devsecops-app
+  namespace: cab-devsecops-app
   labels:
-    app: cab-devsecop-app
+    app: cab-devsecops-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: cab-devsecop-app
+      app: cab-devsecops-app
   template:
     metadata:
       labels:
-        app: cab-devsecop-app
+        app: cab-devsecops-app
     spec:
       containers:
-        - name: cab-devsecop-app
+        - name: cab-devsecops-app
           image: jagadeesharathod/cab-devsecops-app:latest
           ports:
             - containerPort: 80
@@ -26,13 +26,14 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: cab-devsecop-service
-  namespace: cab-devsecop-app
+  name: cab-devsecops-service
+  namespace: cab-devsecops-app
 spec:
   selector:
     app: cab-devsecops-app
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 30080
+      targetPort: 80
+      # nodePort: 30080 # Uncomment and set if you want a fixed NodePort
   type: NodePort
